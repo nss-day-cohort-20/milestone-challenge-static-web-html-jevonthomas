@@ -1,0 +1,84 @@
+/*blue #000C85*/
+/*orange #FFA400*/
+/*light blue #91BED4*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "open sans", arial, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	color: #FFA400;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+/****** nav bar ************/
+
+nav {
+	background-color: #000C85;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 5px 0;
+}
+
+nav a:hover {
+	background-color: white;
+	color: #000C85;
+}
+
+
+/****** main header ************/
+
+header#top {
+	text-align: center;
+	background-color: #000C85;
+	background-image: url("../images/header_photo.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-shadow: 2px 2px 8px #000;
+}
+
+header#top h1 {
+	margin: 0;
+	padding: 30px 0;
+	font-family: tarrget, roboto, sans-serif;
+	text-transform: uppercase;
+	line-height: 0.80em;
+}
+
+header#top h1 span {
+	font-weight: lighter;
+	font-family: "Cormorant SC", serif;
+	font-size: 0.60em;
+}
+
+header#top img {
+	margin-bottom: 30px;
+	border: 3px solid white;
+}
