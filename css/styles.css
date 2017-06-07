@@ -28,6 +28,9 @@ section {
 nav {
 	background-color: white;
 	text-align: center;
+	position: fixed;
+	width: 100%;
+
 }
 
 nav ul {
@@ -51,6 +54,52 @@ nav a:hover {
 	color: white;
 }
 
+nav h1 {
+	margin: 0;
+	padding: 10px 0;
+	font-family: roboto, sans-serif;
+	text-transform: uppercase;
+	line-height: 0.80em;
+	color: #000C85;
+	font-weight: bolder;
+}
+
+#navFix {
+	width: 100%;
+	height: 52px;
+	clear: both;
+}
+
+#menu_icon div {
+    width: 25px;
+    height: 4px;
+    background-color: #000C85;
+    margin: 5px 0;
+}
+
+.menu_hide {
+	display: none;
+}
+
+#nav_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nav_container h1 {
+	margin-left: 10px;
+	padding: 0;
+}
+
+#menu_icon {
+	margin: 10px;
+}
+
+.menu_show {
+	display: initial;
+}
+
 
 /****** main header ************/
 
@@ -67,9 +116,10 @@ header#top {
 header#top h1 {
 	margin: 0;
 	padding: 30px 0;
-	font-family: tarrget, roboto, sans-serif;
+	font-family: roboto, sans-serif;
 	text-transform: uppercase;
 	line-height: 0.80em;
+	font-weight: bolder;
 }
 
 header#top h1 span {
