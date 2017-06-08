@@ -73,10 +73,11 @@ nav h1 {
 	font-weight: bolder;
 }
 
-/*#navFix {
+/*.nav_fix {
 	width: 100%;
 	height: 52px;
 	clear: both;
+	display: none;
 }*/
 
 #menu_icon div {
@@ -143,4 +144,144 @@ header#top h1 span {
 header#top img {
 	margin-bottom: 30px;
 	border: 3px solid white;
+}
+
+
+/********** Useful Links ************/
+
+
+#list_useful_links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.each_useful_link {
+	display: flex;
+	width: 100%;
+	margin: 5px;
+	padding: 15px;
+	flex-direction: column;
+}
+
+.each_useful_link a {
+	margin: 0 auto;
+}
+
+/********** Blog ********************/
+
+#blog article {
+	text-align: center;
+}
+
+
+/************ Projects **************/
+
+#projects {
+	text-align: center;
+}
+
+
+
+/************ Footer ****************/
+
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #000C85;
+	align-items: center;
+}
+
+footer p {
+	color: white;
+}
+
+#social_media_links {
+	display: flex;
+	align-items: center;
+}
+
+footer a {
+	margin-right: 11px;
+}
+
+
+
+/*****************************
+
+Media Quieries
+
+*****************************/
+
+@media (min-width: 750px) {
+	.navigation {
+		background-color: white;
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+
+	.menu_hide {
+		display: initial;
+		margin-right: 20px;
+	}
+
+	.menu_hide li {
+		display: inline-block;
+	}
+
+	.menu_hide a {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	#menu_icon {
+		display: none;
+	}
+
+	div.nav_fix {
+	width: 100%;
+	height: 46px;
+	clear: both;
+	}
+
+	#top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#top img {
+		order: -1;
+		margin: 50px;
+		height: auto;
+		width: 25%;
+	}
+
+	#top h1 {
+		font-size: 4em;
+		width: 50%;
+	}
+
+	#top span {
+		color: #FFA400;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	#list_useful_links {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.each_useful_link {
+		width: 40%;
+	}
 }

@@ -16,3 +16,25 @@ hamburgerMenu.addEventListener("click", function() {
 	navigation[0].classList.toggle("menu_show");
 	mainHeader[0].classList.toggle("menu_show");
 });
+
+//need to create a blog object prototype
+
+
+//need to add a function that sends my blog post to this function
+document.getElementById("blog").innerHTML +=
+	`	<article>
+
+		<header>
+			<h1>${articleName}</h1>
+		</header>
+
+		<section>
+			<p>${blogPost}</p>
+		</section>
+
+		<footer>
+			<author>Jevon Thomas</author>
+			<date>${postDate}</date>
+		</footer>
+
+	</article>`
